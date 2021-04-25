@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="formChecker.js">
+ 	</script>
+	<link href="style.css"
+ 	rel="stylesheet"
+ 	type="text/css"/>
+
+</head>
+
+<body>
+<h1>Welcome to the ILoveLamps!</h1>
+
+<p>Pixar lamp:<br>
+<image id="pixar" src="https://s3.img-b.com/image/private/t_base,c_lpad,f_auto,dpr_auto,w_90,h_90/product/globeelectric/globe-electric-5698601-1612055.jpg">
+<br>$5<br>
+
+<br>Duck lamp:<br>
+<image id="duck" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTao-Il4iOuXavK3CR8v8X4JKWxSgekdcgAgo_Oiu-J-nrqTxF_yIq_A4s_gWLjw1T-R3sxqP0t&usqp=CAc">
+<br>$10,000<br>
+
+<br>Cool lamp<br>
+<image id="cool" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABb14Auais1ZsTUaTPZncYKUL21nFfygevWLvQwhhEcId2JHyyeqGHAx6yg&usqp=CAc">
+<br>$10<br>
+</p>
+
+<form action="customerBackend.php" onsubmit="return verify()" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br>
+<label for="password">Password:</label>
+<input type="text" id="password" name="password" required><br>
+
+<br>
+<label for="item1">Number of Pixar Lamps: </label>
+<input type="text" id="item1" name="item1" required><br>
+<label for="item2">Number of Duck Lamps: </label>
+<input type="text" id="item2" name="item2" required><br>
+<label for="item3">Number of Cool Lamps: </label>
+<input type="text" id="item3" name="item3" required><br>
+
+<p>Which type of shipping would you like?<br></p>
+
+<input type="radio" id="7day" name="ship" value="7day" required>
+<label for="7day">7 day shipping - Free</label><br>
+
+<input type="radio" id="overnight" name="ship" value="overnight" required>
+<label for="overnight">Overnight shipping - $50</label><br>
+
+<input type="radio" id="3day" name="ship" value="3day" required>
+<label for="3day">3 day shipping - $5</label><br>
+<input type="submit">
+
+</form>
+
+</body>
+</html>

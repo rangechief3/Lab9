@@ -1,0 +1,25 @@
+
+body{
+background-color: powderblue;
+}
+
+table{
+background-color: tomato;
+border: 1px solid black;
+}
+
+th{
+border: 1px solid black;
+background-color: lime;
+}
+
+td{
+border: 1px solid black;
+}
+
+tr:nth-child(6){
+background-color: lime;
+}
+tr:nth-child(1){
+background-color: lime;
+}
